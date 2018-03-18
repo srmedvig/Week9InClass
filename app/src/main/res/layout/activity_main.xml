@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GameCanvas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.rvc.student.week9inclass.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageButton
+        android:id="@+id/imgMole"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/murloc"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnControl"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Start"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMole"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
